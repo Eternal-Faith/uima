@@ -1,0 +1,1243 @@
+definitions:
+  auth.UserLogin:
+    properties:
+      password:
+        type: string
+      phone:
+        type: string
+    type: object
+  auth.UserRegister:
+    properties:
+      confirm_password:
+        type: string
+      password:
+        type: string
+      phone:
+        type: string
+    type: object
+  model.Broadcast:
+    properties:
+      content:
+        type: string
+      create_time:
+        type: string
+      id:
+        type: integer
+      path:
+        type: string
+      picture:
+        type: string
+      sha:
+        type: string
+      title:
+        type: string
+    type: object
+  model.Place:
+    properties:
+      area:
+        description: 地点面积
+        type: string
+      data:
+        description: 地点资料
+        type: string
+      entertainment:
+        description: 娱乐项目数量
+        type: string
+      id:
+        type: integer
+      name:
+        description: 地点名称
+        type: string
+      path1:
+        type: string
+      path2:
+        type: string
+      path3:
+        type: string
+      picture1:
+        description: 地点轮换封面1
+        type: string
+      picture2:
+        description: 地点轮换封面2
+        type: string
+      picture3:
+        description: 地点轮换封面3
+        type: string
+      scenic_spot:
+        description: 特色景点数量
+        type: string
+      sha1:
+        type: string
+      sha2:
+        type: string
+      sha3:
+        type: string
+      visitor:
+        description: 最大游客量
+        type: string
+    type: object
+  model.Script:
+    properties:
+      avatar:
+        description: 剧本封面
+        type: string
+      brief_intro:
+        description: 剧本简介
+        type: string
+      id:
+        type: integer
+      introduction:
+        description: 剧本介绍
+        type: string
+      path:
+        type: string
+      place:
+        description: 地点
+        type: string
+      price:
+        description: 价格
+        type: integer
+      script_name:
+        description: 剧本名称
+        type: string
+      sha:
+        type: string
+      tag1:
+        description: 标签一
+        type: string
+      tag2:
+        description: 标签二
+        type: string
+      tag3:
+        description: 标签三
+        type: string
+      tag4:
+        description: 标签四
+        type: string
+      tag5:
+        description: 标签五
+        type: string
+      time:
+        description: 剧本时长
+        type: string
+    type: object
+  model.Shop:
+    properties:
+      current_num:
+        type: string
+      fiery_num:
+        description: 火热指数
+        type: string
+      hot_line:
+        type: string
+      id:
+        type: integer
+      opening_time:
+        description: 营业时间
+        type: string
+      path:
+        type: string
+      picture:
+        description: 商店图片
+        type: string
+      service_intro:
+        description: 服务介绍
+        type: string
+      sha:
+        type: string
+      shop_name:
+        description: 商店名称
+        type: string
+      should_know:
+        description: 需知
+        type: string
+      vip_service:
+        description: vip服务
+        type: string
+    type: object
+  place.PlaceName:
+    properties:
+      place_name:
+        description: 地点名称
+        type: string
+    type: object
+  place.Places:
+    properties:
+      area:
+        description: 地点面积
+        type: string
+      data:
+        description: 地点资料
+        type: string
+      entertainment:
+        description: 娱乐项目数量
+        type: string
+      name:
+        description: 地点名称
+        type: string
+      scenic_spot:
+        description: 特色景点数量
+        type: string
+      visitor:
+        description: 最大游客量
+        type: string
+    type: object
+  script.ScriptEditInfor:
+    properties:
+      brief_intro:
+        description: 剧本简介
+        type: string
+      id:
+        type: integer
+      introduction:
+        description: 剧本介绍
+        type: string
+      place:
+        description: 地点
+        type: string
+      price:
+        description: 价格
+        type: integer
+      script_name:
+        description: 剧本名称
+        type: string
+      tag1:
+        description: 标签一
+        type: string
+      tag2:
+        description: 标签二
+        type: string
+      tag3:
+        description: 标签三
+        type: string
+      tag4:
+        description: 标签四
+        type: string
+      tag5:
+        description: 标签五
+        type: string
+      time:
+        description: 剧本时间
+        type: string
+    type: object
+  script.ScriptId:
+    properties:
+      script_id:
+        description: 剧本的ID
+        type: string
+    type: object
+  script.Scripts:
+    properties:
+      brief_intro:
+        description: 剧本简介
+        type: string
+      introduction:
+        description: 剧本介绍
+        type: string
+      place:
+        description: 地点
+        type: string
+      price:
+        description: 价格
+        type: integer
+      script_name:
+        description: 剧本名称
+        type: string
+      tag1:
+        description: 标签一
+        type: string
+      tag2:
+        description: 标签二
+        type: string
+      tag3:
+        description: 标签三
+        type: string
+      tag4:
+        description: 标签四
+        type: string
+      tag5:
+        description: 标签五
+        type: string
+      time:
+        description: 剧本时间
+        type: string
+    type: object
+  script.Tag:
+    properties:
+      tag:
+        description: 标签
+        type: string
+    type: object
+  user.Appointments:
+    properties:
+      appointment_id:
+        type: integer
+      status:
+        type: string
+    type: object
+  user.OrderId:
+    properties:
+      order_id:
+        type: integer
+    type: object
+  user.ScriptId:
+    properties:
+      script_id:
+        description: 剧本的ID
+        type: string
+    type: object
+  user.Status:
+    properties:
+      status:
+        description: 标签
+        type: string
+    type: object
+  user.UserInfor:
+    properties:
+      email:
+        description: 邮箱
+        type: string
+      gender:
+        description: 性别
+        type: string
+      idcard:
+        description: 身份证号
+        type: string
+      nickname:
+        description: 用户名
+        type: string
+      phone:
+        description: 电话号码
+        type: string
+      realname:
+        description: 真实姓名
+        type: string
+    type: object
+host: localhost:8918
+info:
+  contact:
+    email: 2295616516@qq.com
+    name: Eternal-Faith
+  description: 山乡剧变
+  termsOfService: http://swagger.io/terrms
+  title: uima
+  version: 1.0.0
+paths:
+  /auth/login:
+    post:
+      consumes:
+      - application/json
+      parameters:
+      - description: user
+        in: body
+        name: user
+        required: true
+        schema:
+          $ref: '#/definitions/auth.UserLogin'
+      responses:
+        "200":
+          description: 登陆成功
+        "400":
+          description: 输入格式错误
+        "401":
+          description: 密码错误
+        "404":
+          description: 用户不存在
+      summary: '"登录"'
+      tags:
+      - auth
+  /auth/register:
+    post:
+      consumes:
+      - application/json
+      description: '"注册一个新用户"'
+      parameters:
+      - description: user
+        in: body
+        name: user
+        required: true
+        schema:
+          $ref: '#/definitions/auth.UserRegister'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: 用户创建成功
+        "400":
+          description: 输入有误，格式错误
+        "401":
+          description: 电话号码重复
+      summary: '"注册"'
+      tags:
+      - auth
+  /broadcast/:broadcast_id:
+    delete:
+      consumes:
+      - application/json
+      description: '"删除一个精彩放送的信息"'
+      parameters:
+      - description: broadcast_id
+        in: path
+        name: broadcast_id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: 删除成功
+        "400":
+          description: 删除失败
+      summary: '"删除一个精彩放送信息"'
+      tags:
+      - bro
+  /broadcast/avatar/:broadcast_id:
+    post:
+      consumes:
+      - application/json
+      description: '"精彩放送图片"'
+      parameters:
+      - description: broadcast_id
+        in: path
+        name: broadcast_id
+        required: true
+        type: string
+      - description: 文件
+        in: formData
+        name: file
+        required: true
+        type: file
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: 上传成功
+        "400":
+          description: 上传失败
+        "401":
+          description: 身份验证失败
+      summary: '"修改精彩放送图片"'
+      tags:
+      - bro
+  /broadcast/basic_info:
+    post:
+      consumes:
+      - application/json
+      description: '"添加精彩放送"'
+      parameters:
+      - description: broadcast
+        in: body
+        name: broadcast
+        required: true
+        schema:
+          $ref: '#/definitions/model.Broadcast'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: 上传成功
+        "400":
+          description: 上传失败
+        "401":
+          description: 身份验证失败
+      summary: '"添加精彩放送信息"'
+      tags:
+      - bro
+  /broadcast/get_all:
+    get:
+      consumes:
+      - application/json
+      description: '"精彩放送"'
+      parameters:
+      - description: Broadcast
+        in: body
+        name: broadcast
+        required: true
+        schema:
+          $ref: '#/definitions/model.Broadcast'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: 上传成功
+        "400":
+          description: 上传失败
+        "401":
+          description: 身份验证失败
+      summary: '"精彩放送"'
+      tags:
+      - bro
+  /broadcast/get_single/:broadcast_id:
+    get:
+      consumes:
+      - application/json
+      description: '"获取精彩放送详细信息"'
+      parameters:
+      - description: broadcast_id
+        in: path
+        name: broadcast_id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: 获取成功
+        "400":
+          description: 获取失败
+        "401":
+          description: 身份验证失败
+      summary: '"获取单个精彩放送信息"'
+      tags:
+      - bro
+  /place/create:
+    post:
+      consumes:
+      - application/json
+      parameters:
+      - description: 地点
+        in: body
+        name: object
+        required: true
+        schema:
+          $ref: '#/definitions/place.Places'
+      responses:
+        "200":
+          description: 创建成功
+        "500":
+          description: 服务器错误
+      summary: '"创建地点信息"'
+      tags:
+      - place
+  /place/pictureone:
+    post:
+      consumes:
+      - application/json
+      description: '"修改地点图片1"'
+      parameters:
+      - description: 文件
+        in: formData
+        name: file
+        required: true
+        type: file
+      - description: id--地点的id
+        in: formData
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: '{"mgs":"success"}'
+          schema:
+            $ref: '#/definitions/model.Script'
+        "400":
+          description: 上传失败,请检查token与其他配置参数是否正确
+      summary: '"修改地点图片1"'
+      tags:
+      - place
+  /place/picturethree:
+    post:
+      consumes:
+      - application/json
+      description: '"修改地点图片2"'
+      parameters:
+      - description: 文件
+        in: formData
+        name: file
+        required: true
+        type: file
+      - description: id--地点的id
+        in: formData
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: '{"mgs":"success"}'
+          schema:
+            $ref: '#/definitions/model.Script'
+        "400":
+          description: 上传失败,请检查token与其他配置参数是否正确
+      summary: '"修改地点图片2"'
+      tags:
+      - place
+  /place/picturetwo:
+    post:
+      consumes:
+      - application/json
+      description: '"修改地点图片3"'
+      parameters:
+      - description: 文件
+        in: formData
+        name: file
+        required: true
+        type: file
+      - description: id--地点的id
+        in: formData
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: '{"mgs":"success"}'
+          schema:
+            $ref: '#/definitions/model.Script'
+        "400":
+          description: 上传失败,请检查token与其他配置参数是否正确
+      summary: '"修改地点图片3"'
+      tags:
+      - place
+  /place/view:
+    post:
+      consumes:
+      - application/json
+      description: '"查看地点信息"'
+      parameters:
+      - description: 地点名称
+        in: body
+        name: object
+        required: true
+        schema:
+          $ref: '#/definitions/place.PlaceName'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/model.Place'
+        "500":
+          description: 服务器错误
+      summary: '"查看地点"'
+      tags:
+      - place
+  /script/cover:
+    post:
+      consumes:
+      - application/json
+      description: '"修改剧本封面"'
+      parameters:
+      - description: 文件
+        in: formData
+        name: file
+        required: true
+        type: file
+      - description: id--剧本的id
+        in: formData
+        name: id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: '{"mgs":"success"}'
+          schema:
+            $ref: '#/definitions/model.Script'
+        "400":
+          description: 上传失败,请检查token与其他配置参数是否正确
+      summary: '"修改剧本封面"'
+      tags:
+      - script
+  /script/create:
+    post:
+      consumes:
+      - application/json
+      parameters:
+      - description: 剧本
+        in: body
+        name: object
+        required: true
+        schema:
+          $ref: '#/definitions/script.Scripts'
+      responses:
+        "200":
+          description: 创建成功
+        "400":
+          description: 输入格式有误
+        "500":
+          description: 服务器错误
+      summary: '"创建剧本"'
+      tags:
+      - script
+  /script/edit:
+    post:
+      consumes:
+      - application/json
+      description: '"修改剧本内容"'
+      parameters:
+      - description: 剧本
+        in: body
+        name: object
+        required: true
+        schema:
+          $ref: '#/definitions/script.ScriptEditInfor'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: 修改成功
+        "400":
+          description: 输入格式有误
+        "500":
+          description: 服务器错误
+      summary: '"修改剧本信息"'
+      tags:
+      - script
+  /script/interface:
+    get:
+      consumes:
+      - application/json
+      description: '"返回所有剧本的封面、名字、ID"'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: 获取成功
+          schema:
+            items:
+              $ref: '#/definitions/model.Script'
+            type: array
+        "404":
+          description: 获取失败
+      summary: '"剧本主界面"'
+      tags:
+      - script
+  /script/tag:
+    post:
+      consumes:
+      - application/json
+      description: '"通过标签来进行分类"'
+      parameters:
+      - description: 标签
+        in: body
+        name: object
+        required: true
+        schema:
+          $ref: '#/definitions/script.Tag'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: 搜索成功
+        "400":
+          description: 输入格式有误
+        "404":
+          description: 搜索失败
+        "500":
+          description: 服务器错误
+      summary: '"剧本分类"'
+      tags:
+      - script
+  /script/view:
+    post:
+      consumes:
+      - application/json
+      description: '"查看剧本的具体内容"'
+      parameters:
+      - description: 剧本Id
+        in: body
+        name: object
+        required: true
+        schema:
+          $ref: '#/definitions/script.ScriptId'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: 成功
+        "401":
+          description: 身份验证错误
+        "500":
+          description: 服务器错误
+      summary: '"查看剧本"'
+      tags:
+      - script
+  /shop:
+    post:
+      consumes:
+      - application/json
+      description: '"新增店铺信息"'
+      parameters:
+      - description: shop
+        in: body
+        name: shop
+        required: true
+        schema:
+          $ref: '#/definitions/model.Shop'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: 上传成功
+        "400":
+          description: 上传失败
+        "401":
+          description: 身份验证失败
+      summary: '"店铺信息"'
+      tags:
+      - shop
+  /shop/:shop_id:
+    delete:
+      consumes:
+      - application/json
+      description: '"删除一个店铺的信息"'
+      parameters:
+      - description: shop_id
+        in: path
+        name: shop_id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: 删除成功
+        "400":
+          description: 删除失败
+      summary: '"删除店铺信息"'
+      tags:
+      - shop
+  /shop/get_all:
+    get:
+      consumes:
+      - application/json
+      description: '"获取商店详细信息"'
+      parameters:
+      - description: shop
+        in: body
+        name: shop
+        required: true
+        schema:
+          $ref: '#/definitions/model.Shop'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: 上传成功
+        "400":
+          description: 上传失败
+        "401":
+          description: 身份验证失败
+      summary: '"商店信息"'
+      tags:
+      - shop
+  /shop/single_shop/:shop_id:
+    get:
+      consumes:
+      - application/json
+      description: '"获取单个商店详细信息"'
+      parameters:
+      - description: shop_id
+        in: path
+        name: shop_id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: 获取成功
+        "400":
+          description: 获取失败
+        "401":
+          description: 获取参数失败
+      summary: '"单个商店信息"'
+      tags:
+      - shop
+  /user/appointment:
+    post:
+      consumes:
+      - application/json
+      description: '"预约时间，剧本id，剧本封面，预约状态"'
+      parameters:
+      - description: token
+        in: header
+        name: token
+        required: true
+        type: string
+      - description: 剧本Id
+        in: body
+        name: object
+        required: true
+        schema:
+          $ref: '#/definitions/user.ScriptId'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: 收藏成功
+        "401":
+          description: 身份验证失败
+        "500":
+          description: 服务器错误，收藏失败
+      summary: '"预约剧本"'
+      tags:
+      - user
+  /user/avatar:
+    post:
+      consumes:
+      - application/json
+      description: '"修改用户头像"'
+      parameters:
+      - description: token
+        in: header
+        name: token
+        required: true
+        type: string
+      - description: 文件
+        in: formData
+        name: file
+        required: true
+        type: file
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: 上传成功
+        "400":
+          description: 上传失败
+        "401":
+          description: 身份验证失败
+      summary: '"修改头像"'
+      tags:
+      - user
+  /user/cancel:
+    post:
+      consumes:
+      - application/json
+      description: '"将收藏的剧本取消"'
+      parameters:
+      - description: token
+        in: header
+        name: token
+        required: true
+        type: string
+      - description: 剧本Id
+        in: body
+        name: object
+        required: true
+        schema:
+          $ref: '#/definitions/user.ScriptId'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: 取消收藏成功
+        "400":
+          description: 发送请求失败
+        "401":
+          description: 身份验证失败
+        "500":
+          description: 服务器错误，取消收藏收藏失败
+      summary: '"取消收藏剧本"'
+      tags:
+      - user
+  /user/cancelappoint:
+    post:
+      consumes:
+      - application/json
+      description: '"将预约的剧本取消"'
+      parameters:
+      - description: token
+        in: header
+        name: token
+        required: true
+        type: string
+      - description: 剧本Id
+        in: body
+        name: object
+        required: true
+        schema:
+          $ref: '#/definitions/user.ScriptId'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: 取消预约成功
+        "400":
+          description: 发送请求失败
+        "401":
+          description: 身份验证失败
+        "500":
+          description: 服务器错误，取消收藏失败
+      summary: '"取消预约剧本"'
+      tags:
+      - user
+  /user/collection:
+    post:
+      consumes:
+      - application/json
+      description: '"将该剧本收藏到我的收藏中"'
+      parameters:
+      - description: token
+        in: header
+        name: token
+        required: true
+        type: string
+      - description: 剧本Id
+        in: body
+        name: object
+        required: true
+        schema:
+          $ref: '#/definitions/user.ScriptId'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: 收藏成功
+        "401":
+          description: 身份验证失败
+        "500":
+          description: 服务器错误，收藏失败
+      summary: '"收藏剧本"'
+      tags:
+      - user
+  /user/edit:
+    post:
+      consumes:
+      - application/json
+      parameters:
+      - description: token
+        in: header
+        name: token
+        required: true
+        type: string
+      - description: user
+        in: body
+        name: object
+        required: true
+        schema:
+          $ref: '#/definitions/user.UserInfor'
+      responses:
+        "200":
+          description: 登陆成功
+        "400":
+          description: 输入格式错误
+        "401":
+          description: 身份认证失效
+        "404":
+          description: 用户不存在
+        "500":
+          description: 服务器错误
+      summary: '"设置个人信息"'
+      tags:
+      - user
+  /user/myappointment:
+    get:
+      consumes:
+      - application/json
+      description: '"获取用户的所有剧本预约"'
+      parameters:
+      - description: token
+        in: header
+        name: token
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: 查看成功
+        "400":
+          description: 发送请求失败
+        "401":
+          description: 身份认证失效
+        "500":
+          description: 服务器错误
+      summary: '"我的预约(剧本)"'
+      tags:
+      - user
+  /user/mycollection:
+    get:
+      consumes:
+      - application/json
+      description: '"获取用户的所有剧本收藏"'
+      parameters:
+      - description: token
+        in: header
+        name: token
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: 查看成功
+        "400":
+          description: 发送请求失败
+        "401":
+          description: 身份认证失效
+        "500":
+          description: 服务器错误
+      summary: '"我的收藏(剧本)"'
+      tags:
+      - user
+  /user/order:
+    post:
+      consumes:
+      - application/json
+      parameters:
+      - description: token
+        in: header
+        name: token
+        required: true
+        type: string
+      - description: 剧本Id
+        in: body
+        name: object
+        required: true
+        schema:
+          $ref: '#/definitions/user.ScriptId'
+      responses:
+        "200":
+          description: 创建订单成功
+        "400":
+          description: 输入格式有误
+        "500":
+          description: 服务器错误
+      summary: '"创建订单(剧本)"'
+      tags:
+      - user
+  /user/payforscript:
+    put:
+      consumes:
+      - application/json
+      parameters:
+      - description: token
+        in: header
+        name: token
+        required: true
+        type: string
+      - description: 订单ID
+        in: body
+        name: object
+        required: true
+        schema:
+          $ref: '#/definitions/user.OrderId'
+      responses:
+        "200":
+          description: 订单更新成功
+        "400":
+          description: 输入格式错误
+        "401":
+          description: 身份认证失效
+        "500":
+          description: 服务器错误
+      summary: '"订单付款(剧本)"'
+      tags:
+      - user
+  /user/searchappointment:
+    post:
+      consumes:
+      - application/json
+      description: '"通过标签来进行分类"'
+      parameters:
+      - description: token
+        in: header
+        name: token
+        required: true
+        type: string
+      - description: 预约状态
+        in: body
+        name: object
+        required: true
+        schema:
+          $ref: '#/definitions/user.Status'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: 搜索成功
+        "400":
+          description: 输入格式有误
+        "404":
+          description: 搜索失败
+        "500":
+          description: 服务器错误
+      summary: '"剧本分类"'
+      tags:
+      - user
+  /user/updateappointmentstatus:
+    put:
+      consumes:
+      - application/json
+      parameters:
+      - description: token
+        in: header
+        name: token
+        required: true
+        type: string
+      - description: 预约ID及状态
+        in: body
+        name: object
+        required: true
+        schema:
+          $ref: '#/definitions/user.Appointments'
+      responses:
+        "200":
+          description: 预约更新成功
+        "400":
+          description: 输入格式错误
+        "401":
+          description: 身份认证失效
+        "500":
+          description: 服务器错误
+      summary: '"更新预约状态"'
+      tags:
+      - user
+  /user/view:
+    post:
+      consumes:
+      - application/json
+      description: '"获取用户的基本信息"'
+      parameters:
+      - description: token
+        in: header
+        name: token
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: 游览信息成功
+        "401":
+          description: 身份验证失败
+        "404":
+          description: 客户端错误
+      summary: '"游览个人信息"'
+      tags:
+      - user
+  /user/vieworder:
+    get:
+      consumes:
+      - application/json
+      description: '"查看所有订单(含时间，价格，剧本名字)"'
+      parameters:
+      - description: token
+        in: header
+        name: token
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: 成功
+        "401":
+          description: 身份验证错误
+        "500":
+          description: 服务器错误
+      summary: '"查看订单"'
+      tags:
+      - user
+schemes:
+- http
+swagger: "2.0"
